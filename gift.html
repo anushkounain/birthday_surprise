@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Your Surprise 🎉</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#ffdce8;
+font-family:sans-serif;
+text-align:center;
+overflow:hidden;
+}
+
+h1{
+font-size:40px;
+color:#ff4f86;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🎉 Surprise! 🎉</h1>
+
+<script>
+
+alert("This is where your real birthday message will appear ❤️")
+
+function confetti(){
+let c=document.createElement("div")
+c.innerHTML="🎊"
+c.style.position="fixed"
+c.style.left=Math.random()*100+"vw"
+c.style.fontSize="30px"
+c.style.animation="fall 4s linear"
+document.body.appendChild(c)
+
+setTimeout(()=>c.remove(),4000)
+}
+
+setInterval(confetti,200)
+
+</script>
+
+</body>
+</html>
