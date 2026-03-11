@@ -2,95 +2,131 @@
 <html>
 <head>
 
-<title>Happy Birthday ❤️</title>
+<title>For Someone Special</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
-background:#ffe6f0;
-font-family:'Poppins',sans-serif;
+background:#ffeaf3;
+font-family:'Quicksand',sans-serif;
+font-weight:300;
 text-align:center;
+overflow-x:hidden;
 }
 
 .container{
-padding:40px 20px;
+padding:50px 20px;
+max-width:800px;
+margin:auto;
 }
 
 h1{
-font-family:'Pacifico',cursive;
-font-size:45px;
-color:#ff3b7a;
+font-weight:400;
+font-size:42px;
+color:#ff5a8c;
 }
 
 .message{
 font-size:18px;
-max-width:500px;
-margin:auto;
+line-height:1.7;
 margin-top:20px;
 }
 
-.photo{
-width:260px;
-border-radius:15px;
-margin-top:25px;
-box-shadow:0 10px 20px rgba(0,0,0,0.15);
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+margin-top:40px;
+}
+
+.gallery img{
+width:100%;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.button{
+margin-top:40px;
+padding:14px 30px;
+background:#ff7aa5;
+border:none;
+border-radius:30px;
+font-size:18px;
+color:white;
+cursor:pointer;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.button:hover{
+transform:scale(1.05);
 }
 
 .heart{
 position:fixed;
-color:#ff5c8a;
-animation:float 6s infinite;
+color:#ff6b9d;
+animation:float 6s linear infinite;
 }
 
 @keyframes float{
-0%{transform:translateY(100vh);}
-100%{transform:translateY(-10vh);}
+0%{transform:translateY(100vh)}
+100%{transform:translateY(-10vh)}
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Happy Birthday Sis 🎂</h1>
+<h1>Happy Birthday</h1>
 
 <p class="message">
-You are not just my sister, you are my best friend, my support system,
-and someone I’m incredibly grateful for every single day.  
-I hope this year brings you all the happiness you deserve ❤️
+Some people come into our lives and make everything feel a little warmer, a little brighter.  
+You are one of those people for me.  
+
+Through every random moment, every laugh, and every memory we've made, you've always meant more than words can explain.
+
+Today is just a reminder of how special you are.
 </p>
 
-<img src="https://picsum.photos/300?random=1" class="photo">
-<img src="https://picsum.photos/300?random=2" class="photo">
-<img src="https://picsum.photos/300?random=3" class="photo">
+<div class="gallery">
 
-<p class="message">
-No matter where life takes us, you'll always mean the world to me.
-Happy Birthday ❤️
-</p>
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+
+</div>
+
+<button class="button" onclick="openGift()">Reveal the Gift 🎁</button>
 
 </div>
 
 <script>
+
+function openGift(){
+window.location.href="gift.html";
+}
 
 function createHeart(){
 let heart=document.createElement("div");
 heart.className="heart";
 heart.innerHTML="❤";
 heart.style.left=Math.random()*100+"vw";
-heart.style.fontSize=(20+Math.random()*30)+"px";
+heart.style.fontSize=(15+Math.random()*20)+"px";
 document.body.appendChild(heart);
 
 setTimeout(()=>heart.remove(),6000);
 }
 
-setInterval(createHeart,500);
+setInterval(createHeart,400);
 
 </script>
 
