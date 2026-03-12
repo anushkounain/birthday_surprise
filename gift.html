@@ -1,52 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Your Gift</title>
+<meta charset="UTF-8">
+<title>The Birthday Post</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Libre+Baskerville&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-background:#e7e2d9;
-font-family:Georgia, serif;
+background:#e6e0d6;
+font-family:'Libre Baskerville', serif;
 display:flex;
 justify-content:center;
-align-items:center;
-height:100vh;
+padding:40px;
+}
+
+.newspaper{
+width:750px;
+background:#f6f2ea;
+padding:35px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.masthead{
+text-align:center;
+border-bottom:4px double black;
+padding-bottom:10px;
+}
+
+.masthead h1{
+font-family:'Playfair Display', serif;
+font-size:54px;
+margin:0;
+letter-spacing:2px;
+}
+
+.meta{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+margin-top:5px;
+}
+
+.main-title{
+text-align:center;
+margin-top:20px;
+}
+
+.main-title h2{
+font-size:36px;
+margin:0;
+letter-spacing:1px;
+}
+
+.sub{
+text-align:center;
+font-style:italic;
+margin:10px 0 25px 0;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+.article{
+font-size:14px;
+line-height:1.6;
+text-align:justify;
+}
+
+.photo{
+width:100%;
+height:260px;
+object-fit:cover;
+filter:grayscale(100%);
+border:1px solid black;
+}
+
+.caption{
+font-size:11px;
+margin-top:4px;
 text-align:center;
 }
 
-.card{
-background:#f8f5ef;
-padding:40px;
-width:500px;
-box-shadow:0 5px 20px rgba(0,0,0,0.2);
+.divider{
+border-top:2px solid black;
+margin:25px 0;
+}
+
+.footer{
+text-align:center;
+font-size:14px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="card">
+<div class="newspaper">
 
-<h1>Dear Maira ❤️</h1>
+<div class="masthead">
+<h1>THE BIRTHDAY POST</h1>
+
+<div class="meta">
+<span>Special Edition</span>
+<span>July 2026</span>
+</div>
+</div>
+
+<div class="main-title">
+<h2>MAIRA TURNS 21</h2>
+</div>
+
+<div class="sub">
+“A year older, a year bolder.”
+</div>
+
+<div class="grid">
+
+<div>
+
+<img class="photo" src="https://picsum.photos/400/300?grayscale">
+
+<div class="caption">
+A rare photograph of the birthday star.
+</div>
+
+</div>
+
+<div class="article">
 
 <p>
-This isn't just a birthday page.
-It's a little corner of the internet
-made just for you.
+In today's special edition we celebrate the birthday
+of <b>Maira</b>, known widely for her chaotic humor,
+iconic moments, and unmatched ability to turn
+ordinary days into unforgettable memories.
 </p>
 
 <p>
-No matter how much we fight,
-you'll always be my favorite person.
+From endless late-night talks to the countless
+arguments that somehow always turn into laughter,
+life has never been boring with her around.
 </p>
 
 <p>
-Happy Birthday.
-– Anush
+Friends and family agree that the world becomes
+a little brighter wherever Maira goes.
 </p>
+
+</div>
+
+</div>
+
+<div class="divider"></div>
+
+<div class="grid">
+
+<div class="article">
+
+<p>
+This birthday marks another chapter in a story
+full of adventures, inside jokes, and memories
+that only siblings truly understand.
+</p>
+
+<p>
+Through every fight, every laugh, and every
+moment in between, one thing has always stayed
+the same — she will always be my favorite person.
+</p>
+
+<p>
+Today we celebrate not just a birthday, but the
+many moments that made life a little more
+special simply because she was part of it.
+</p>
+
+</div>
+
+<div>
+
+<img class="photo" src="https://picsum.photos/401/300?grayscale">
+
+<div class="caption">
+Historic birthday documentation.
+</div>
+
+</div>
+
+</div>
+
+<div class="divider"></div>
+
+<div class="footer">
+
+<p>
+Written with love by Anush ❤️
+</p>
+
+<p>
+Happy Birthday Maira.
+</p>
+
+</div>
 
 </div>
 
