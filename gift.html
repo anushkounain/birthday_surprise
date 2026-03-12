@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Your Surprise 🎉</title>
+<title>Your Gift</title>
 
 <style>
 
 body{
-margin:0;
-height:100vh;
+background:#e7e2d9;
+font-family:Georgia, serif;
 display:flex;
 justify-content:center;
 align-items:center;
-background:#ffdce8;
-font-family:sans-serif;
+height:100vh;
 text-align:center;
-overflow:hidden;
 }
 
-h1{
-font-size:40px;
-color:#ff4f86;
+.card{
+background:#f8f5ef;
+padding:40px;
+width:500px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
 }
 
 </style>
@@ -29,27 +28,27 @@ color:#ff4f86;
 
 <body>
 
-<h1>🎉 Surprise! 🎉</h1>
+<div class="card">
 
-<script>
+<h1>Dear Maira ❤️</h1>
 
-alert("This is where your real birthday message will appear ❤️")
+<p>
+This isn't just a birthday page.
+It's a little corner of the internet
+made just for you.
+</p>
 
-function confetti(){
-let c=document.createElement("div")
-c.innerHTML="🎊"
-c.style.position="fixed"
-c.style.left=Math.random()*100+"vw"
-c.style.fontSize="30px"
-c.style.animation="fall 4s linear"
-document.body.appendChild(c)
+<p>
+No matter how much we fight,
+you'll always be my favorite person.
+</p>
 
-setTimeout(()=>c.remove(),4000)
-}
+<p>
+Happy Birthday.
+– Anush
+</p>
 
-setInterval(confetti,200)
-
-</script>
+</div>
 
 </body>
 </html>
